@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# 🧠 NeuralGuide AI  
+An AI-driven developer assistant that helps with code analysis, debugging support, learning roadmaps, and task-oriented guidance. NeuralGuide AI combines MERN stack functionality with LLM-powered intelligence to create a personalized assistant for developers.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+### 🔍 AI Code Analyzer  
+- Understands code snippets and gives explanations.  
+- Detects potential issues and suggests improvements.  
 
-### `npm start`
+### 🛠 Interactive Debugger  
+- Helps interpret errors and suggests fixes.  
+- Provides step-by-step reasoning for debugging.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🎯 Roadmap Generator  
+- Generates personalized developer learning paths.  
+- Tailored recommendations based on user goals.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 💬 AI Chat Assistant  
+- Context-aware responses.  
+- Developer-friendly prompts and structured answers.
 
-### `npm test`
+### 🔐 Authentication (Firebase)  
+- Secure login and signup.  
+- Protects user-specific chat history and saved items.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 💾 Persistent Storage  
+- Saves conversations, roadmaps, and user progress via MongoDB.  
+- Users can return and continue where they left off.
 
-### `npm run build`
+### 🎨 Clean & Responsive UI  
+- Built with React + Tailwind CSS.  
+- Reusable components and smooth user experience.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🏗 Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### **Frontend**
+- React.js  
+- Tailwind CSS  
+- Axios  
+- React Router  
 
-### `npm run eject`
+### **Backend**
+- Node.js  
+- Express.js  
+- Firebase Auth  
+- Gemini API integration  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### **Database**
+- MongoDB (Atlas)  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📂 Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+NeuralGuideAI/
+│── client/ # React frontend
+│ ├── src/
+│ │ ├── components/
+│ │ ├── pages/
+│ │ ├── context/
+│ │ └── utils/
+│── server/ # Express backend
+│ ├── routes/
+│ ├── controllers/
+│ ├── models/
+│ └── middleware/
+│── .env
+│── package.json
+│── README.md
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## ⚙️ Installation & Setup
 
-### Code Splitting
+### **1. Clone the repository**
+```bash
+git clone https://github.com/your-username/NeuralGuideAI.git
+cd NeuralGuideAI
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## Frontend
+cd client
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Backend
+cd server
+npm install
 
-### Making a Progressive Web App
+## 🔧 Environment Variables
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+MONGO_URI=your_mongodb_connection_string
+FIREBASE_API_KEY=your_firebase_key
+FIREBASE_AUTH_DOMAIN=your_domain
+GEMINI_API_KEY=your_gemini_key
+PORT=5000
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
