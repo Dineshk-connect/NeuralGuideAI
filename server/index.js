@@ -8,6 +8,7 @@ import cookieParser from "cookie-parser";
 import authRoutes from "./routes/authRoutes.js";
 import geminiRoutes from "./routes/geminiRoutes.js";
 import chatRoutes from "./routes/chatRoutes.js";
+import internalGeminiRoutes from "./routes/internalGeminiRoutes.js";
 
 dotenv.config();
 const app = express();
@@ -49,6 +50,7 @@ mongoose.connection.on("error", (err) => {
 app.use("/api/auth", authRoutes);
 app.use("/api/gemini", geminiRoutes);
 app.use("/api/chat", chatRoutes);
+app.use("/api/internal/gemini", internalGeminiRoutes);
 
 // ✅ Request logger (optional)
 app.use((req, res, next) => {
